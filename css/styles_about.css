@@ -1,0 +1,488 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-family: "Winky Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    background-color: white;
+}
+
+a:active,
+a:hover {
+    outline: 0;
+}
+
+/* header Stuff */
+header {
+    background-color: #8d91c7;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 32px;
+    position: relative;
+    top: 0;
+    height: auto;
+}
+
+.head {
+    white-space: nowrap;
+    padding: 10px;
+}
+
+/* footer stuff */
+footer {
+    background: #8d91c7;
+    color: black;
+    position: relative;
+    bottom: 0;
+}
+
+footer p {
+    padding: 10px;
+}
+
+/* Story Blocks */
+
+.all-blocks {
+    display: flex;
+    flex-direction: column;
+}
+
+.story-block, .offer-block, .filler-block {
+    align-self: center;
+    display: flex;
+    gap: 20px;
+    position: relative;
+    flex-direction: column;
+    background-color: #CDF7F6;
+    padding: 50px 20px 20px 20px;
+    width: auto;
+    max-width: 600px;
+    box-shadow: 4px 4px 4px grey;
+    border: 1px solid transparent;
+    text-align: left;
+    margin-top: 40px;
+    margin-bottom: 30px;
+    margin-left: 50px;
+    margin-right: 50px;
+    font-size: 16px;
+}
+
+.block-title {
+    position: absolute;
+    top: 0;
+    background-color: #8FB8DE;
+    padding: 10px 20px;
+    font-size: 24px;
+    font-weight: bold;
+    box-shadow: 4px 4px 4px grey;
+    border: 1px solid transparent;
+    color: black;
+}
+
+.story-block .block-title {
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.offer-block .block-title {
+    left: -30px;
+    transform: translateY(-50%)
+}
+
+.filler-block .block-title {
+    transform: translateY(-50%);
+    right: -30px;
+}
+
+.filler-block {
+    display: grid;
+    grid-template-areas: 
+    "text text"
+    "image1 image2"
+    "image3 image4";
+    text-align: center;
+}
+
+.filler-block img {
+    width:100%;
+    height: 150px;
+    max-width:100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.filler-block img:hover, .filler-block img:focus {
+    transform: scale(1.1);
+    transition: all 0.1s ease;
+    cursor: zoom-in;
+}
+
+.filler-block p {
+    grid-area: text;
+}
+
+.filler-block .image1 {
+    grid-area: image1;
+}
+
+.filler-block .image2 {
+    grid-area: image2;
+}
+
+.filler-block .image3 {
+    grid-area: image3;
+}
+
+.filler-block .image4 {
+    grid-area: image4;
+}
+
+.combo-block .top, .combo-block .bottom {
+    width: 100%;
+    padding-top: 60px;
+    padding-bottom: 20px;
+    position: relative;
+}
+
+.combo-block .top {
+    background-color: #8FB8DE;
+    margin-top: 10px;
+}
+
+.combo-block .bottom {
+    background-color: #9A94BC;
+    margin-bottom: 40px;
+}
+
+.combo-title {
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 24px;
+    font-weight: bold;
+    border-bottom: 2px solid white;
+    color: black;
+}
+
+.combo-content {
+    max-width: 600px;
+    margin: 0 auto;
+    color: black;
+    padding: 0 20px;
+    display: grid;
+    grid-template-areas:
+    "text text"
+    "contact team";
+    gap: 10px;
+}
+
+.combo-content .contact, .combo-content .team {
+    background-color: #6A605C;
+    color: white;
+    padding: 10px;
+    font-family: "Winky Sans", sans-serif;
+    border-radius: 10px;
+    box-shadow: 4px 4px 0 black;
+    border: transparent;
+    transition: all 0.1s ease;
+    font-size: 16px;
+    text-decoration: none;
+    text-align: center;
+}
+
+.combo-content .contact:hover, .combo-content .contact:focus, 
+.combo-content .team:hover, .combo-content .team:focus{
+    color: #DEDEDE;
+    background-color: #474747; 
+    cursor: pointer;
+    transform: translate(4px, 4px);
+    box-shadow: 0px 0px 0px black;
+}
+
+.combo-content p {
+    grid-area: text;
+}
+
+.combo-content .contact {
+    grid-area: contact;
+}
+
+.combo-content .team {
+    grid-area: team;
+}
+
+/* scrolling blocks */
+@keyframes scrolling-left {
+    0% {transform: translateX(0);}
+
+    100% {transform: translateX(-50%);}
+}
+
+.scrolling {
+    width: 100%;
+    background-color: white;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.scrolling-images {
+    display: inline-flex;
+    animation: scrolling-left 50s linear infinite;
+}
+
+.scrolling-images img {
+    width: 100px;
+    height: 100px;
+    object-fit: scale-down;
+    margin-right: 80px;
+}
+
+
+/* nav css*/
+@font-face {
+    font-family: "responsivenav";
+    src: url("../icons/responsivenav.eot");
+    src: url("../icons/responsivenav.eot?#iefix") format("embedded-opentype"),
+        url("../icons/responsivenav.ttf") format("truetype"),
+        url("../icons/responsivenav.woff") format("woff"),
+        url("../icons/responsivenav.svg#responsivenav") format("svg");
+    font-weight: normal;
+    font-style: normal;
+}
+
+.nav-toggle {
+    text-decoration: none;
+    text-indent: -300px;
+    position: relative;
+    overflow: hidden;
+    width: 60px;
+    height: 55px;
+    float: right;
+}
+
+.nav-toggle:before {
+    color: black;
+    font: normal 28px/55px "responsivenav";
+    text-transform: none;
+    text-align: center;
+    position: absolute;
+    content: "\2261";
+    text-indent: 0;
+    width: 100%;
+    left: 0;
+    top: 0;
+}
+
+.nav-toggle.active:before {
+    font-size: 24px;
+    content: "\2718";
+}
+
+.nav-container {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    align-items: flex-end;
+    height: 100%;
+}
+
+.nav-collapse {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.nav-collapse ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    list-style: none;
+    flex-direction: column;
+    align-items: flex-end;
+    width: auto;
+}
+
+.nav-collapse li {
+    display: block;
+}
+
+.nav-collapse a {
+    text-decoration: none;
+    padding: 0.7em 1em;
+    color: black;
+    width: 100%;
+    display: block;
+    font-size: .7em;
+}
+
+.nav-collapse ul ul a {
+    padding-left: 2em;
+}
+
+.nav-collapse .menu-item a:hover,
+.nav-collapse .menu-item a:focus {
+    text-decoration: underline;
+}
+
+.js .nav-collapse {
+    clip: rect(0 0 0 0);
+    max-height: 0;
+    position: absolute;
+    display: block;
+    overflow: hidden;
+    zoom: 1;
+}
+
+.nav-collapse.opened {
+    max-height: 9999px;
+}
+
+.nav-collapse,
+.nav-collapse * {
+    box-sizing: border-box;
+}
+
+.nav-collapse,
+.nav-collapse ul {
+    list-style: none;
+    width: auto;
+    display: flex;
+    justify-content: end;
+}
+
+/* Desktop mode */
+@media screen and (min-width: 768px) {
+    /* block css */
+
+    .all-blocks {
+        display: grid;
+        grid-template-areas:
+        "story offer"
+        "clients clients"
+        "combo combo"
+        "scrolling scrolling";
+        justify-items: center;
+        width: 100%;
+    }
+
+    .story-block {
+        grid-area: story;
+        margin-left: 50px;
+        height: auto;
+        align-self: stretch;
+    }
+
+    .story-block .block-title {
+        white-space: nowrap;
+    }
+
+    .offer-block {
+        grid-area: offer;
+        margin-right: 50px;
+        height: auto;
+        align-self: stretch;
+    }
+
+    .filler-block {
+        grid-area: clients;
+        margin-top: 20px;
+        display: grid;
+        grid-template-areas: 
+        "text text text text"
+        "image1 image2 image3 image4";
+        text-align: center;
+        max-width: 100%;
+    }
+
+    .combo-block {
+        grid-area: combo;
+        display: grid;
+        grid-template-areas:
+        "top bottom";
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .combo-block .bottom {
+        grid-area: bottom;
+    }
+
+    .combo-block .top {
+        grid-area: top;
+        margin-bottom: 15px;
+        width: 120%;
+        box-shadow: 4px 4px 4px grey;
+    }
+
+    .combo-block .top .combo-content {
+        width: 68%;
+    }
+
+    .combo-block .bottom {
+        box-shadow: 4px 4px 4px grey;
+    }
+
+    .scrolling {
+        grid-area: scrolling;
+        margin-top: 10px;
+    }
+
+
+    /* nav css desktop */
+    .nav-container {
+        position: static;
+        flex-direction: row;
+        align-items: center;
+        max-width: 100%;
+    }
+
+    .nav-collapse ul {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-end;
+    }
+
+    .nav-collapse li {
+        width: auto;
+    }
+
+    .nav-collapse a {
+        text-align: center;
+        border-top: 0;
+        margin: 0;
+    }
+
+    .nav-collapse ul ul a {
+        display: none;
+    }
+
+    .nav-collapse.closed {
+        max-height: none;
+    }
+
+    .nav-toggle {
+        display: none;
+    }
+}
+
+/* Desktop mode but huge? ask about later */
+@media screen and (min-width: 1024px) {
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+        margin-top: 100px;
+    }
+}
