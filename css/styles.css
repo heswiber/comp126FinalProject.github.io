@@ -230,35 +230,42 @@ footer p{
 
 
 @media screen and (min-width: 768px) {
-  .nav-collapse ul {
-  flex-direction: row;
-  align-items: flex-end;
-}
-  
-  .nav-collapse li {
-    width: auto;
-  }
+ .nav-container {
+        position: static;
+        flex-direction: row;
+        align-items: center;
+        max-width: 100%;
+    }
 
-  .nav-collapse a {
-    padding: 1em 2em;
-    text-align: center;
-    border-top: 0;
-    margin: 0;
-  }
+    .nav-collapse ul {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-end;
+    }
 
-  .nav-collapse ul ul a {
-    display: none;
-  }
+    .nav-collapse li {
+        width: auto;
+    }
 
-  .nav-collapse.closed {
-    max-height: none;
-  }
-  .nav-toggle {
-    display: none;
-  }
-}
+    .nav-collapse a {
+        text-align: center;
+        border-top: 0;
+        margin: 0;
+    }
 
-@media screen and (min-width: 1024px) {
+    .nav-collapse ul ul a {
+        display: none;
+    }
+
+    .nav-collapse.closed {
+        max-height: none;
+    }
+
+    .nav-toggle {
+        display: none;
+    }
+
 
   .container{
     display: flex;
