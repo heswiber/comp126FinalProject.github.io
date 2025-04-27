@@ -46,7 +46,7 @@ header{
 .box1 p{
   justify-content: center;
   align-items: center;
-  color:#ccc;
+  color:#474747;
 }
 
 
@@ -94,7 +94,7 @@ header{
   width: 100%;
   padding: 12px 25px;
   background:#8fb8de;
-  color: black;
+  color: #474747;
   border: none;
   border-radius: 5px;
   font-size: 18px;
