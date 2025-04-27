@@ -273,7 +273,10 @@ footer p{
         display: none;
     }
 
-
+  header{
+    padding:0;
+    margin0;
+  }
   .container{
     display: flex;
     flex-direction: column;
