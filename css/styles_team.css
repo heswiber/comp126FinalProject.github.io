@@ -22,6 +22,8 @@
     display: flex; justify-content: center;
     box-shadow: 4px 4px 4px grey;
     border-radius: 10px;
+    border: solid 1px black;
+    object-fit: cover;
 }
 
 .photoone h1{
@@ -43,7 +45,9 @@
   padding: 20px;
   display: flex; justify-content: center;
   box-shadow: 4px 4px 4px grey;
-  border-radius: 10px;
+    border-radius: 10px;
+    border: solid 1px grey;
+    object-fit: cover;
 }
 
 .phototwo h1{
@@ -65,7 +69,9 @@
   padding: 20px;
   display: flex; justify-content: center;
   box-shadow: 4px 4px 4px grey;
-  border-radius: 10px;
+    border-radius: 10px;
+    border: solid 1px grey;
+    object-fit: cover;
 }
 
 .photothree h1{
@@ -87,7 +93,9 @@
   padding: 20px;
   display: flex; justify-content: center;
   box-shadow: 4px 4px 4px grey;
-  border-radius: 10px;
+    border-radius: 10px;
+    border: solid 1px grey;
+    object-fit: cover;
 }
 
 .photofour h1{
