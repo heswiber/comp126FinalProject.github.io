@@ -243,18 +243,6 @@ header {
         margin-bottom: 15px;
     }
 
-    .photoone h1, .phototwo h1, .photothree h1, .photofour h1 {
-        
-    }
-    
-    .photoone h2, .phototwo h2, .photothree h2, .photofour h2 {
-        
-    }
-
-    .photoone p, .phototwo p, .photothree p, .photofour p {
-        
-    }
-    
     /* nav css desktop */
     .nav-container {
       position: static;
