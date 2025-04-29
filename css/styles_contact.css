@@ -119,6 +119,8 @@ footer{
   background: #8d91c7;
   color:black;
   padding: 5px;
+  position: fixed;
+  bottom: 0;
 }
 
 footer p{
