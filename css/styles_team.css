@@ -273,17 +273,23 @@ header {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
+        margin-bottom: 50px;
     }
 
     .photoone, .phototwo, .photothree, .photofour {
-        height: 200px;
-        width: auto;
-        object-fit: scale-down;
+        display: flex;
+        flex-direction: column;
+        width: 250px;
+        text-align: center;
+        align-items: center;
+        
     }
 
     .photoone img, .phototwo img, .photothree img, .photofour img {
         width: 100%;
-        height: auto;
+        height: 300px;
+        object-fit: cover;
+        border: solid 1px black;
     }
     
     /* nav css desktop */
