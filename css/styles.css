@@ -231,7 +231,6 @@ img {
           height: auto; 
           margin-bottom: 20px; 
           border-radius: 10px;
-          box-shadow: 4px 4px 4px grey;
         }
         .images { 
           justify-content: center; 
