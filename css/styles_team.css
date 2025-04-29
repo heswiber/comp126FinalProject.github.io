@@ -276,7 +276,9 @@ header {
     }
 
     .photoone, .phototwo, .photothree, .photofour {
-        width: 40%;
+        height: 200px;
+        width: auto;
+        object-fit: scale-down;
     }
 
     .photoone img, .phototwo img, .photothree img, .photofour img {
