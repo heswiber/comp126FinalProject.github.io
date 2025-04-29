@@ -7,6 +7,13 @@
     margin: 0;
 }
 
+.header {
+    text-align: center;
+    background-color: #8fb8de;
+    padding: 20px;
+    margin: 10px;
+    box-shadow: 4px 4px 4px grey;
+}
 
 .photoone, .phototwo, .photothree, .photofour {
     width: 60%;
@@ -234,18 +241,15 @@ header {
     }
 
     .photoone h1, .phototwo h1, .photothree h1, .photofour h1 {
-        margin-bottom: 2px;
-        font-size: 20px;
+        
     }
     
     .photoone h2, .phototwo h2, .photothree h2, .photofour h2 {
-        margin-bottom: 10px;
-        font-size: 16px;
-        font-weight: bold;
+        
     }
 
     .photoone p, .phototwo p, .photothree p, .photofour p {
-        font-size: 16px;
+        
     }
     
     /* nav css desktop */
