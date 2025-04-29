@@ -14,27 +14,27 @@
     border-radius: 10px;
     padding: 10px;
     box-shadow: 4px 4px 4px grey;
+    background-color: #cdf7f6;
     text-align: center;
 }
 
 
 .photoone img, .phototwo img, .photothree img, .photofour img {
-    width: 100%;
-    height: auto;
+    width: auto;
+    height: 300px;
     border-radius: 10px;
-    border: solid 1px black;
     object-fit: cover;
 }
 
 .photoone h1, .phototwo h1, .photothree h1, .photofour h1 {
-        margin-bottom: 20px;
-        font-size: 20px;
+        margin-bottom: 5px;
+        font-size: 24px;
 }
     
 .photoone h2, .phototwo h2, .photothree h2, .photofour h2 {
         margin-bottom: 10px;
-        font-size: 16px;
-        font-weight: normal;
+        font-size: 20px;
+        font-weight: bold;
 }
 
 .photoone p, .phototwo p, .photothree p, .photofour p {
