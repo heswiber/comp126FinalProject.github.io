@@ -13,6 +13,8 @@
     padding: 20px;
     margin: 10px;
     box-shadow: 4px 4px 4px grey;
+    border-radius: 10px;
+    width: fit-content;
 }
 
 .photoone, .phototwo, .photothree, .photofour {
