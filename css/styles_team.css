@@ -21,6 +21,7 @@
     padding: 20px;
     display: flex; justify-content: center;
     box-shadow: 4px 4px 4px grey;
+    border-radius: 10px;
 }
 
 .photoone h1{
@@ -30,9 +31,9 @@
 
 
 .phototwo{
-  width: 60%;
-  margin: 0 auto;
-  border-radius: 10px;
+    width: 60%;
+    margin: 0 auto;
+    border-radius: 10px;
 }
 
 
@@ -42,6 +43,7 @@
   padding: 20px;
   display: flex; justify-content: center;
   box-shadow: 4px 4px 4px grey;
+  border-radius: 10px;
 }
 
 .phototwo h1{
@@ -63,6 +65,7 @@
   padding: 20px;
   display: flex; justify-content: center;
   box-shadow: 4px 4px 4px grey;
+  border-radius: 10px;
 }
 
 .photothree h1{
@@ -84,6 +87,7 @@
   padding: 20px;
   display: flex; justify-content: center;
   box-shadow: 4px 4px 4px grey;
+  border-radius: 10px;
 }
 
 .photofour h1{
@@ -256,7 +260,22 @@ header {
 
 
 @media screen and (min-width: 768px) {
-  
+    
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .photoone, .phototwo, .photothree, .photofour {
+        width: 40%;
+    }
+
+    .photoone img, .phototwo img, .photothree img, .photofour img {
+        width: 100%;
+        height: auto;
+    }
+    
     /* nav css desktop */
     .nav-container {
       position: static;
