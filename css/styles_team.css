@@ -10,10 +10,10 @@
 
 .photoone, .phototwo, .photothree, .photofour {
     width: 60%;
-    max-width: 300px;
+    max-width: 350px;
     margin: 0 auto 20px auto;
     border-radius: 10px;
-    padding: 10px;
+    padding: 20px;
     box-shadow: 4px 4px 4px grey;
     background-color: #cdf7f6;
     text-align: center;
@@ -33,7 +33,7 @@
 }
     
 .photoone h2, .phototwo h2, .photothree h2, .photofour h2 {
-        margin-bottom: 10px;
+        margin-bottom: 30px;
         font-size: 20px;
         font-weight: bold;
 }
@@ -229,7 +229,6 @@ header {
         width: 100%;
         height: 300px;
         object-fit: cover;
-        border: solid 1px black;
         border-radius: 10px;
         margin-bottom: 15px;
     }
@@ -242,7 +241,7 @@ header {
     .photoone h2, .phototwo h2, .photothree h2, .photofour h2 {
         margin-bottom: 10px;
         font-size: 16px;
-        font-weight: normal;
+        font-weight: bold;
     }
 
     .photoone p, .phototwo p, .photothree p, .photofour p {
