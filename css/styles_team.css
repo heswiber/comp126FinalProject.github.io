@@ -14,7 +14,6 @@
     border-radius: 10px;
     padding: 10px;
     box-shadow: 4px 4px 4px grey;
-    margin-bottom: 10px;
     text-align: center;
 }
 
@@ -22,18 +21,13 @@
 .photoone img, .phototwo img, .photothree img, .photofour img {
     width: 100%;
     height: auto;
-    display: flex; justify-content: center;
     border-radius: 10px;
     border: solid 1px black;
     object-fit: cover;
 }
 
-.photoone h1, .phototwo img, .photothree img, .photofour img {
-    padding-bottom: 25px;
-}
-
 .photoone h1, .phototwo h1, .photothree h1, .photofour h1 {
-        margin-bottom: 2px;
+        margin-bottom: 20px;
         font-size: 20px;
 }
     
