@@ -285,7 +285,6 @@ header {
         width: 250px;
         text-align: center;
         align-items: center;
-        box-shadow: 4px 4px 4px grey;
         border-radius: 10px;
         
     }
@@ -300,7 +299,7 @@ header {
     }
 
     .photoone h1, .phototwo h1, .photothree h1, .photofour h1 {
-        margin-bottom: 10px;
+        margin-bottom: 2px;
         font-size: 20px;
     }
     
@@ -310,7 +309,7 @@ header {
         font-weight: normal;
     }
 
-    .photoone h2, .phototwo h2, .photothree h2, .photofour h2 {
+    .photoone p, .phototwo p, .photothree p, .photofour p {
         font-size: 16px;
     }
     
